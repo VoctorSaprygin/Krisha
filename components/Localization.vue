@@ -13,23 +13,21 @@
           <li>
             <div>
               ru
-              <i></i>
+              <i class="mini">
+
+              </i>
             </div>
           </li>
           <li>
-            <a href="#">
-              Избранное
-            </a>
+            <nuxt-link to="#"> Избранное</nuxt-link>
+
           </li>
           <li>
-            <a href="#">
-              Регистрация
-            </a>
+            <nuxt-link to="#">Регистрация</nuxt-link>
+
           </li>
-          <li
-          ><a href="#">
-            Личный кабинет
-          </a>
+          <li>
+            <nuxt-link to="#">Личный кабинет</nuxt-link>
           </li>
 
         </ul>
@@ -78,6 +76,15 @@ justify-content: space-between;
 }
 .navBar li{
   margin-left: 24px;
+  color: #2a81dd
+}
+.navBar a{
+  color: #2a81dd
+
+}
+.navBar a:hover{
+  color: #ff3333;
+  text-decoration: underline;
 }
 .line1{
  width: 100%;
@@ -90,5 +97,20 @@ li{
 }
 a {
   text-decoration:none;
+}
+.mini ::before{
+  font-family: 'font-icon';
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
 }
 </style>
