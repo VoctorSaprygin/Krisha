@@ -34,7 +34,7 @@
       </div>
 
     </div>
-    <hr class="line1"/>
+    <!-- <hr class="line1"/> -->
     <div class="header">
 
     </div>
@@ -98,19 +98,5 @@ li{
 a {
   text-decoration:none;
 }
-.mini ::before{
-  font-family: 'font-icon';
-  display: inline-block;
-  vertical-align: top;
-  line-height: 1;
-  font-weight: 400;
-  font-style: normal;
-  speak: none;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 24px;
-}
+
 </style>
