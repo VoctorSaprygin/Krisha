@@ -44,7 +44,7 @@
       </div>
 
     </div>
-    <hr class="line1"/>
+    <!-- <hr class="line1"/> -->
     <div class="header">
 
     </div>
@@ -153,8 +153,12 @@ li{
 a {
   text-decoration:none;
 }
+<<<<<<< HEAD:components/krisha/Localization.vue
 /* .mini {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 } */
+=======
+
+>>>>>>> 68d734b7019aa2f7a16d73b28639ae742ea94039:components/Localization.vue
 </style>
