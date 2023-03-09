@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <Localization/>
-    <TheHeader/>
+    <!-- <TheHeader/> -->
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
-import Localization from "~/components/Localization.vue";
-import TheHeader from "~/components/TheHeader.vue";
+import Localization from "~/components/krisha/Localization.vue";
+import TheHeader from "~/components/krisha/TheHeader.vue";
 
 export default Vue.extend({
   name: 'IndexPage',

@@ -8,28 +8,38 @@
         </ul>
 
       </div>
-      <div >
+      <div>
         <ul class="navBar">
           <li>
             <div>
-              ru
-              <i class="mini">
-
-              </i>
+              <div id="lang">
+                <span>
+                  RU
+                </span>
+                <div class="modal-window-lang">
+                  <div class="lang-kz">
+                    <a class="lang-menu">
+                      Қазақша
+                    </a>
+                  </div>
+                  <div class="lang-ru">
+                    <a class="lang-menu">
+                      Русский
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
           <li>
             <nuxt-link to="#"> Избранное</nuxt-link>
-
           </li>
           <li>
             <nuxt-link to="#">Регистрация</nuxt-link>
-
           </li>
           <li>
             <nuxt-link to="#">Личный кабинет</nuxt-link>
           </li>
-
         </ul>
       </div>
 
@@ -55,6 +65,50 @@ export default {
 </script>
 
 <style scoped>
+#lang {
+  visibility: hidden;
+  height: 40px;
+}
+#lang span{
+  visibility: visible;
+}
+#lang:hover {
+  visibility: visible;
+}
+#lang .lang-kz {
+  position: fixed;
+  position: absolute;
+  z-index: 10;
+  background-color: #FFFFFF;  
+  border-radius: 5px;  
+}
+#lang .lang-ru {
+  position: fixed;
+  position: absolute;
+  z-index: 10;
+  margin-top: 45px;
+  background: #FFFFFF;  
+  border-radius: 5px;  
+}
+.modal-window-lang {
+  position: absolute;
+  border: 1px solid black;
+  width: 80px;
+  height: 70px;
+  padding: 7px 8px;
+  left: 60%;
+  top: 6%;
+}
+.lang-menu {
+  cursor: pointer;
+  color: #2981dd;
+}
+.lang-menu:hover {
+  color: red;
+}
+.lang-menu:focus {
+  color: black;
+}
 .localization{
   display: flex;
 justify-content: space-between;
@@ -73,6 +127,7 @@ justify-content: space-between;
 }
 .navBar{
   display: flex;
+  margin-top: 40px;
 }
 .navBar li{
   margin-left: 24px;
@@ -98,19 +153,8 @@ li{
 a {
   text-decoration:none;
 }
-.mini ::before{
-  font-family: 'font-icon';
-  display: inline-block;
-  vertical-align: top;
-  line-height: 1;
-  font-weight: 400;
-  font-style: normal;
-  speak: none;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 24px;
-}
+/* .mini {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+} */
 </style>
