@@ -98,7 +98,7 @@ li{
 a {
   text-decoration:none;
 }
-.mini ::before{
+/* .mini ::before{
   font-family: 'font-icon';
   display: inline-block;
   vertical-align: top;
@@ -112,5 +112,5 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 24px;
-}
+} */
 </style>
