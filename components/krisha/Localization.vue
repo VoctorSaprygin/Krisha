@@ -18,12 +18,12 @@
                 </span>
                 <div class="modal-window-lang">
                   <div class="lang-kz">
-                    <a class="lang-menu">
+                    <a class="lang-menu" href="/">
                       Қазақша
                     </a>
                   </div>
                   <div class="lang-ru">
-                    <a class="lang-menu">
+                    <a class="lang-menu" href="/">
                       Русский
                     </a>
                   </div>
@@ -31,15 +31,21 @@
               </div>
             </div>
           </li>
-          <li>
-            <nuxt-link to="#"> Избранное</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="#">Регистрация</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="#">Личный кабинет</nuxt-link>
-          </li>
+          <nuxt-link to="#">
+            <li>
+              Избранное
+            </li>
+          </nuxt-link>
+          <nuxt-link to="#">
+            <li>
+              Регистрация
+            </li>
+          </nuxt-link>
+          <nuxt-link to="#">
+            <li>
+              Личный кабинет
+            </li>
+          </nuxt-link>
         </ul>
       </div>
 
@@ -59,9 +65,7 @@
 </template>
 
 <script>
-export default {
-  name: "Localization"
-}
+
 </script>
 
 <style scoped>
@@ -74,6 +78,7 @@ export default {
 }
 #lang:hover {
   visibility: visible;
+  text-decoration: none;
 }
 #lang .lang-kz {
   position: fixed;
@@ -153,12 +158,4 @@ li{
 a {
   text-decoration:none;
 }
-<<<<<<< HEAD:components/krisha/Localization.vue
-/* .mini {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-} */
-=======
-
->>>>>>> 68d734b7019aa2f7a16d73b28639ae742ea94039:components/Localization.vue
 </style>
