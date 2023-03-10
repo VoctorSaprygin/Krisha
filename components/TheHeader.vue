@@ -75,12 +75,15 @@
     <input type="checkbox"  value="#">
     есть фото
   </label>
-  <br>
+  <div class="hoverNewBuildings">
   <label id="checkbox1" class="newBuildings">
     <input type="checkbox"   value="#">
+    <img  class="kursor" src="@/assets/kursor.png">
     новостройки
   </label>
-  <br>
+  <!-- <p>Первичное жильё</p>
+  <h>Ищите проверенные объявления от застройщиков.</h> -->
+</div>
   <label id="checkbox1">
     <input type="checkbox"  value="#">
     от хозяев
@@ -101,7 +104,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped >
 .container{
 
   max-width: 1180px;
@@ -127,10 +130,7 @@ export default {
 a{
   text-decoration:none;
   color:#2a81dd;}
-.btn{
-  display: flex;
-  flex-direction: column;
-}
+ 
 li{
   list-style-type: none;
   /*padding: 0 5% ;*/
@@ -154,8 +154,16 @@ padding: 2px 4px ;
   border: none;
    outline: none;
    color:#2a81dd;
- 
+   cursor:pointer;
    font-size: 14px;
+   min-width: 188px;
+ min-height: 36px;
+ border-radius: 8px;
+    border: 1px solid rgba(42,129,221,.1);
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(28,24,25,.1);
+    transition: box-shadow .3s ease;
+    cursor:pointer;
 }
 .btn {
   display: flex;
@@ -202,22 +210,56 @@ margin: 1%;
   /* margin: 0 20px; */
   padding: 10px 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .newBuildings{
+ 
+border-radius: 3px;
+
+}
+.newBuildings :hover{
+  background: white;
+border-radius: 3px;
+
+}
+.hoverNewBuildings {
   background: #fde8a3;
 }
+.hoverNewBuildings a  {
+display: none;
+}
+.hoverNewBuildings p  {
+  display: none;
+}
+
+.hoverNewBuildings:hover{
+  background: white;
+  color: black;
+position: relative;
+display:block;
+  /* border:  solid black 2px; */
+}
+.kursor{
+  position: relative;
+  top:15px ;
+  left:10px;
+ height:20px;
+ transform: rotate(-35deg);
+}
 .categories{
-  margin:1%
+  margin:1%;
 }
 .categories select{
   margin: 0 5px;
+  font-size: 12px;
+  color:grey;
 }
 .filter1{
   margin: 1%;
 }
 .filter1 input{
-  width: 5vw;
+  width: 4vw;
+  font-size: 12px;
 }
 
 

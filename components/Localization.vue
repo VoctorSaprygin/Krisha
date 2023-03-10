@@ -34,16 +34,7 @@
       </div>
 
     </div>
-    <hr class="line1"/>
-    <div class="header">
-
-    </div>
-    <div class="header">
-
-    </div>
-    <div class="header">
-
-    </div>
+ 
   </div>
 
 </template>
